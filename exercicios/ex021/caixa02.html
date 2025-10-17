@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grouping tags</title>
+        <style>
+            body{
+                font-family:'Courier New', Courier, monospace;
+                background-image: linear-gradient(to left, #4CABA6, #95d2de );
+            }
+            nav > a {
+                text-decoration:underline; color: #F2CDAC; font-size: 20px; background-color: #4CABA6; box-shadow: -5px 5px 30px black;
+            }
+            nav > a:hover { text-decoration: none; color:#155e5a; -webkit-text-stroke: 1px #22c1d2;}
+            
+            header{
+                color: #F2CDAC; font-size: 25px; text-align: center; -webkit-text-stroke: 1px #4C4A59;
+                background-image: linear-gradient(to left, #F2CDAC, #4CABA6); 
+                padding: 10px;
+                margin: 10px;
+                border: 5px solid #4CABA6;
+                box-shadow: -7px 6px 30px black;  c
+                
+            }
+            main { 
+                background-image: linear-gradient(to right, #F2CDAC, #66c2d4);
+                padding: 10px;
+                text-align: center;
+                margin: 10px;
+                border: 5px dotted #4CABA6;
+                font-family:'Courier New', Courier, monospace; color:#28272f; -webkit-text-stroke: 1px #155e5a;
+                box-shadow: -7px 6px 30px black; 
+                border-radius: 20px;
+            }
+            article {
+                background-color: #6bb0ad93; padding: 5px;
+            }
+            article > aside { background-image: linear-gradient(to right, #f3c094, #68aeaa);  }
+            footer { 
+                background-image: linear-gradient(to right, #68aeaa, #F2CDAC); text-align:center;
+                padding:10px;
+                font:bolder 20px;
+                color:#28272f; font-style:unset;
+                padding: 5px; 
+            }
+            footer > p { margin: 0px; box-shadow: -26px 5px 26px black;}
+            h1{text-shadow: -10px 3px 30px black;}
+            div#bola{
+                height: 100px;  
+                width: 100px;
+                margin: 10px;   
+                background-color: white;
+                border-radius:40px;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Meu site</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Quem somos</a>
+                <a href="#">Serviços</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Bem vindo ao meu site</h2>
+            <section id="assuntos">Blá blá blá
+                <article>
+                    <aside>
+                        <h3>Assunto 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                    </aside>
+                </article>
+                <article>
+                    <h3>Assunto 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>Desenvolvido pela mais diva</p>
+        </footer>
+
+    </body>
+</html>

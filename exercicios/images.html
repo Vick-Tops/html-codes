@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Images</title>
+        <style>
+            body{font-family: fantasy; background-color: paleturquoise;
+            font-size: 15px;}
+            h1{color:steelblue;text-align: justify;}
+        </style>
+    </head>
+    <body>
+        <h1>Imagem Dinamica</h1>
+        <p>Abra este site em diferentes tamanhos</p>
+        <picture>
+            <source media="(max-width: 750px)" srcset="imedia300.png" type="image/png"></source>
+            <source media="(max-width: 1050px)" srcset="imedia700.png" type="image/png"></source>
+            <img src="imedia10002.png" alt="Imagem flexivel">
+        </picture>
+    </body>
+</html>
