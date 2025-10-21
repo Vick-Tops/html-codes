@@ -39,6 +39,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    text-align: center;
+    text-align: 50vw;
 }
 header > p {
     padding-bottom: 50px;
@@ -112,11 +114,11 @@ section.imagem > p {
 
 }
 section.normal > p {
-    background-color: rgba(255, 255, 255, 0.178);
+    background-color: rgba(255, 255, 255, 0.089);
     border-radius: 10px;
     width: 400px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.411);
 
 }
