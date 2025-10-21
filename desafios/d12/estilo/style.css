@@ -1,4 +1,24 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playwrite+AU+TAS:wght@100..400&display=swap');
+
+:root {
+    --fonte1: verdana, geneva, tahoma, sans-serif;
+    --fonte2: 'Lobster', sans-serif;
+    --fonte3: "Playwrite AU TAS", cursive;
+}
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playwrite-au-tas {
+  font-family: "Playwrite AU TAS", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -6,11 +26,15 @@
 html, body {
     min-height: 100vh;
     background-color:darkslateblue;
+    font-family: var(--fonte1)
 }
 header {
     background-color: black;
     color: white;
     text-align: center;
+    font-family: var(--fonte2); 
+    font-size: 20px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.253);
 }
 header > h1 {
     padding-top: 50px;
@@ -33,20 +57,68 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-weight: 400;
+    font-size: 21px;
+    text-align: center;
+
+}
+section > p {
+    padding-bottom: 1em;
+    padding-top: 1em;
+     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.253);
+   
 }
 section.normal{
     background-color:rgb(153, 135, 255);
     color: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    flex-direction: column;  
+    box-shadow: inset 0 -4px 10px rgba(0, 0, 0, 0.15);
+   
 }
 section.imagem{
     background-color: rgb(36, 36, 36);
     color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    flex-direction: column; 
+    box-shadow: inset 5px 5px 10px 10px rgba(0, 0, 0, 0.411);   
+    background-attachment: fixed;
+    
+}
+section#img1{
+    background-image: url('../imagens/ryan-hutton-Jztmx9yqjBw-unsplash\ \(1\).jpg');
+}
+section#img2{
+    background-image: url('../imagens/background002.jpg');
 }
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.274);
+    background-color: rgba(0, 0, 0, 0.466);
     border-radius: 10px;
-    width: 200px;
-    padding: 10px;
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.411);
+
+}
+section.normal > p {
+    background-color: rgba(255, 255, 255, 0.178);
+    border-radius: 10px;
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.411);
+
 }
 footer { 
     background-color: black;
