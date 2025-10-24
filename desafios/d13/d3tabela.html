@@ -13,12 +13,14 @@
                 width: 700px;
                 background-color: rgba(0, 0, 0, 0.856);
                 color: white;
+                box-shadow: -3px -6px 27px rgba(158, 6, 158, 0.603);
             }
             td, th{
                 border: 1px solid black;
                 border-color:darkviolet;
                 padding: 10px;
                 text-align: center;
+                
             }
             thead{
                 background-color:rgba(0, 0, 0, 0.575);
@@ -30,14 +32,14 @@
         <table>
             <thead>
                 <tr>
-                    <th>Gênero</th>
-                    <th>Bandas</th>
-                    <th colspan="3">Músicas</th>
+                    <th scope="col">Gênero</th>
+                    <th scope="col">Bandas</th>
+                    <th colspan="3" scope="colgroup">Músicas</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th rowspan="3">Darkwave</th>
+                    <th rowspan="3" scope="rowgroup">Darkwave</th>
                     <td>Clan of Xymox</td>
                     <td>Louise</td>
                     <td>A day</td>
@@ -56,7 +58,7 @@
                     <td>Afterlife</td>
                 </tr>
                 <tr>
-                    <th rowspan="3">Post-Punk</th>
+                    <th rowspan="3" scope="rowgroup">Post-Punk</th>
                     <td>Bahaus</td>
                     <td>Bela Lugosi’s Dead</td>
                     <td>Dark Entries</td>
@@ -75,6 +77,10 @@
                     <td>Dominion/Mother Russia</td>
                 </tr>
             </tbody>    
+            <tfoot>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
+            </tfoot>
         </table>
     </body>
 </html>
