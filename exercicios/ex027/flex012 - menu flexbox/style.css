@@ -1,8 +1,23 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+
+.manufacturing-consent-regular {
+  font-family: "Manufacturing Consent", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.germania-one-regular {
+  font-family: "Germania One", system-ui;
+  font-weight: 200;
+  font-style: normal;
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "Germania One", system-ui;
 }
 body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -13,19 +28,46 @@ body {
     width: 100vw;
 }
 header > h1{
-    border: 1px solid black;
+    
+}
+h1, h3{
+    font-family: "Manufacturing Consent", system-ui;
+}
+h1{
+    font-size: 37px;
 }
 h3{
     color: rgb(87, 0, 0);
-    font-size: 25px;
+    font-size: 34px;
 }
 header{
     background-image: linear-gradient(to top, rgb(87, 0, 0), rgb(129, 39, 39) );
     padding: 10px;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.418);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 200px;
 }
 nav {
-    border: 1px solid black;
+    
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row nowrap;
+    flex: none;
+}
+nav > a {
+    background-color:rgb(97, 18, 97);
+    color: rgb(177, 103, 103);
+    border-radius: 6px;
+    padding: 2px;
+    text-decoration: none;
+    margin: 5px;
+}
+nav > a:hover {
+    background-color:rgb(158, 83, 158);
+    color: rgb(44, 0, 0);
 }
 main {
     background: rgba(87, 0, 0, 0.432);
