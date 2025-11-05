@@ -22,13 +22,13 @@
 body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
-    background-color:rgb(185, 142, 185);
+    background-color:rgb(158, 122, 158);
     text-align: center;
     height: 100vh;
     width: 100vw;
 }
 header > h1{
-    
+    padding-left: 10px;
 }
 h1, h3{
     font-family: "Manufacturing Consent", system-ui;
@@ -51,11 +51,11 @@ header{
     flex: 0 0 200px;
 }
 nav {
-    
     display: flex;
     justify-content: flex-end;
     flex-flow: row nowrap;
     flex: none;
+    padding-right: 10px;
 }
 nav > a {
     background-color:rgb(97, 18, 97);
@@ -77,3 +77,4 @@ main {
     padding-bottom: 20px;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.418);
 }
+
