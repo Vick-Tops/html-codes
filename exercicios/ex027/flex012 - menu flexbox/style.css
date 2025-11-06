@@ -32,6 +32,7 @@ header > h1{
 }
 h1, h3{
     font-family: "Manufacturing Consent", system-ui;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.452);
 }
 h1{
     font-size: 37px;
@@ -56,6 +57,7 @@ nav {
     flex-flow: row nowrap;
     flex: none;
     padding-right: 10px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.452);
 }
 nav > a {
     background-color:rgb(97, 18, 97);
