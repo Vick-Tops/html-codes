@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+
+.manufacturing-consent-regular {
+  font-family: "Manufacturing Consent", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.germania-one-regular {
+  font-family: "Germania One", system-ui;
+  font-weight: 200;
+  font-style: normal;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: "Germania One", system-ui;
+    font-weight: 100;
+    line-height: 1.5em;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-left: 10px;
+    background-color:rgb(194, 213, 231);
+}
+header, section.normal {
+    padding: 20px;
+}
+h1, h2{
+    font-family: "Manufacturing Consent", system-ui;   
+}
+h1{
+    font-size:38px;
+    color:rgb(22, 30, 39);
+    display: inline;
+    background-image:linear-gradient(to top, rgba(104, 121, 138, 0.678), rgba(187, 208, 230, 0.699));
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 10px;
+    padding: 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+h2{
+    font-size:28px;
+    color:rgb(27, 35, 43);
+}
+p, h1, h2{
+    text-align: justify;
+    margin-bottom: 8px;  
+    color:rgb(12, 16, 20);
+}
+section.flex-content{
+    background-image: linear-gradient(to bottom, rgb(104, 121, 138), rgb(187, 208, 230),rgb(104, 121, 138),rgb(187, 208, 230),rgb(104, 121, 138));
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+article.text-media{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5px;
+    align-content: space-between;
+    
+}
+article.media-text{
+    display: flex;
+    padding: 5px;
+    flex-flow: row wrap-reverse;
+    align-content: space-between;
+}
+p, h2{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+p{
+    font-size: 17px;
+    background-color:rgba(27, 35, 43, 0.171);
+    border-radius: 10px;
+    box-shadow:  4px 2px 6px #0000009c;
+}
+article > div.text {
+    flex: 1 1 500px;
+    margin: auto;
+}
+article > div.media {
+    flex: 1 0 500px;
+}
+div.media > img {
+    display: block;
+    margin: auto;
+    width: 400px;
+    margin-bottom: -15px;
+    }
+div.media > iframe {
+    display: block;
+    margin: auto;
+    width: 90%; /* faz com que o video n qubre a section */
+    margin-top: 30px;
+    
+
+}
